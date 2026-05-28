@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaryClothes - Moda y Estilo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER / ENCABEZADO -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>💃 MaryClothes</h1>
+                <p class="tagline">Estilo, Confianza y Moda</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BANNER PRINCIPAL / HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Bienvenida a MaryClothes</h2>
+            <p>Descubre las mejores prendas de moda para expresar tu estilo personal</p>
+            <button class="btn btn-primary" onclick="scrollToSection('catalogo')">Ver Catálogo</button>
+        </div>
+    </section>
+
+    <!-- MAIN / CONTENIDO PRINCIPAL -->
+    <main class="container">
+        <!-- SECCIÓN CATEGORÍAS -->
+        <section class="categorias">
+            <h2>Nuestras Categorías</h2>
+            <div class="categorias-grid">
+                <div class="categoria-card">
+                    <div class="categoria-icon">👕</div>
+                    <h3>Blusas</h3>
+                    <p>Blusas elegantes y cómodas para cualquier ocasión</p>
+                </div>
+                <div class="categoria-card">
+                    <div class="categoria-icon">👖</div>
+                    <h3>Pantalones</h3>
+                    <p>Pantalones modernos que te harán lucir impecable</p>
+                </div>
+                <div class="categoria-card">
+                    <div class="categoria-icon">👗</div>
+                    <h3>Vestidos</h3>
+                    <p>Vestidos para cada estación y estilo</p>
+                </div>
+                <div class="categoria-card">
+                    <div class="categoria-icon">✨</div>
+                    <h3>Accesorios</h3>
+                    <p>Complementos que perfeccionan tu look</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CATÁLOGO DE PRODUCTOS -->
+        <section id="catalogo" class="catalogo">
+            <h2>Catálogo Destacado</h2>
+            <div class="productos-grid">
+                <!-- PRODUCTO 1 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="https://via.placeholder.com/250x300?text=Blusa+Floral" alt="Blusa Floral">
+                        <span class="badge">Nuevo</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Blusa Floral</h3>
+                        <p class="descripcion">Blusa elegante con estampado floral</p>
+                        <p class="precio">$45.99</p>
+                        <button class="btn btn-secondary" onclick="agregarCarrito('Blusa Floral')">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 2 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="https://via.placeholder.com/250x300?text=Pantalon+Negro" alt="Pantalón Negro">
+                        <span class="badge">Popular</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Pantalón Negro Clásico</h3>
+                        <p class="descripcion">Pantalón negro elegante para cualquier ocasión</p>
+                        <p class="precio">$52.99</p>
+                        <button class="btn btn-secondary" onclick="agregarCarrito('Pantalón Negro')">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 3 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="https://via.placeholder.com/250x300?text=Vestido+Blanco" alt="Vestido Blanco">
+                        <span class="badge">Rebaja</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Vestido Blanco Elegante</h3>
+                        <p class="descripcion">Vestido blanco perfecto para eventos especiales</p>
+                        <p class="precio"><span class="precio-original">$89.99</span> $69.99</p>
+                        <button class="btn btn-secondary" onclick="agregarCarrito('Vestido Blanco')">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 4 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="https://via.placeholder.com/250x300?text=Chaleco+Denim" alt="Chaleco Denim">
+                        <span class="badge">Stock Limitado</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Chaleco Denim</h3>
+                        <p class="descripcion">Chaleco versátil en denim azul oscuro</p>
+                        <p class="precio">$38.99</p>
+                        <button class="btn btn-secondary" onclick="agregarCarrito('Chaleco Denim')">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 5 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="https://via.placeholder.com/250x300?text=Falda+Rosada" alt="Falda Rosada">
+                        <span class="badge">Nuevo</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Falda Rosada Premium</h3>
+                        <p class="descripcion">Falda en tela premium con ajuste perfecto</p>
+                        <p class="precio">$48.99</p>
+                        <button class="btn btn-secondary" onclick="agregarCarrito('Falda Rosada')">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 6 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="https://via.placeholder.com/250x300?text=Blazer+Gris" alt="Blazer Gris">
+                        <span class="badge">Popular</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Blazer Gris Profesional</h3>
+                        <p class="descripcion">Blazer perfecta para el trabajo o eventos formales</p>
+                        <p class="precio">$79.99</p>
+                        <button class="btn btn-secondary" onclick="agregarCarrito('Blazer Gris')">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN OFERTAS -->
+        <section id="ofertas" class="ofertas">
+            <h2>¡Ofertas Especiales!</h2>
+            <div class="ofertas-container">
+                <div class="oferta-card oferta-1">
+                    <h3>Descuento de Verano</h3>
+                    <p class="descuento">Hasta 50% OFF</p>
+                    <p>En toda la colección de blusas y vestidos</p>
+                    <button class="btn btn-white" onclick="alert('¡Válido esta semana!')">Aprovechar</button>
+                </div>
+                <div class="oferta-card oferta-2">
+                    <h3>Compra 2, Lleva 3</h3>
+                    <p class="descuento">En Pantalones</p>
+                    <p>Promoción especial para artículos seleccionados</p>
+                    <button class="btn btn-white" onclick="alert('¡Aplicado automáticamente!')">Ver Más</button>
+                </div>
+                <div class="oferta-card oferta-3">
+                    <h3>Envío Gratis</h3>
+                    <p class="descuento">Compras mayores a $100</p>
+                    <p>Entrega a todo el país en 3-5 días</p>
+                    <button class="btn btn-white" onclick="alert('Código: ENVIOGRATIS')">Comprar Ahora</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN TESTIMONIOS -->
+        <section id="testimonios" class="testimonios">
+            <h2>Lo Que Dicen Nuestros Clientes</h2>
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonio-texto">"Las prendas de MaryClothes son de excelente calidad. ¡Me encantan los diseños!"</p>
+                    <p class="testimonio-autor">- María González</p>
+                </div>
+                <div class="testimonio-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonio-texto">"Muy buen servicio al cliente y entrega rápida. ¡100% recomendado!"</p>
+                    <p class="testimonio-autor">- Sofía López</p>
+                </div>
+                <div class="testimonio-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonio-texto">"Los precios son justos y la moda es actual. Sigo comprando aquí constantemente."</p>
+                    <p class="testimonio-autor">- Alejandra Martínez</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto" class="contacto">
+            <h2>¡Contacta con Nosotros!</h2>
+            <div class="contacto-container">
+                <div class="contacto-info">
+                    <div class="info-card">
+                        <h3>📱 WhatsApp</h3>
+                        <p>Envíanos un mensaje directo</p>
+                        <a href="https://wa.me/c/29764442185763" target="_blank" class="btn btn-primary">Ir a WhatsApp</a>
+                    </div>
+                    <div class="info-card">
+                        <h3>📧 Email</h3>
+                        <p>contacto@maryclothes.com</p>
+                        <a href="mailto:contacto@maryclothes.com" class="btn btn-primary">Enviar Email</a>
+                    </div>
+                    <div class="info-card">
+                        <h3>📍 Ubicación</h3>
+                        <p>Centro Comercial, Local 15</p>
+                        <p>Lunes a Sábado: 10am - 6pm</p>
+                    </div>
+                </div>
+
+                <form class="contacto-form" onsubmit="enviarFormulario(event)">
+                    <h3>Formulario de Consulta</h3>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER / PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre MaryClothes</h4>
+                <p>Tu tienda de moda online de confianza. Ofrecemos prendas de calidad a precios accesibles.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Útiles</h4>
+                <ul>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">📘 Facebook</a>
+                    <a href="#" class="social-icon">📷 Instagram</a>
+                    <a href="#" class="social-icon">🐦 Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MaryClothes. Todos los derechos reservados.</p>
+            <p>Hecho con 💖 para ti</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
